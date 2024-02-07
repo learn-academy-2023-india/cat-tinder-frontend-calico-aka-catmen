@@ -1,16 +1,12 @@
-import React from "react"
+import React from 'react'
+import homeImage from '../assets/home.png' 
 
 const Home = () => {
-    return (
-        <div>
-            {/* Home */}
-        </div>
-    )
+  return (
+    <div className="home-container">
+      <img src={homeImage} alt="Home" className="home-img" />
+    </div>
+  )
 }
-
-
-
-
-
 
 export default Home

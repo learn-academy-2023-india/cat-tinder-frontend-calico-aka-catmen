@@ -8,9 +8,4 @@ const CatShow = () => {
     )
 }
 
-
-
-
-
-
 export default CatShow

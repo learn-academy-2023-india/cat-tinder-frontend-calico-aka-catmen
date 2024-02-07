@@ -8,8 +8,4 @@ const CatEdit = () => {
     )
 }
 
-
-
-
-
 export default CatEdit

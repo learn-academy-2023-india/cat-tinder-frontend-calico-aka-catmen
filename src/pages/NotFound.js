@@ -1,16 +1,12 @@
-import React from "react"
+import React from 'react'
+import notFoundImage from '../assets/404.png' 
 
 const NotFound = () => {
     return (
-        <div>
-            {/* Not Found */}
-        </div>
+      <div className="not-found">
+        <img src={notFoundImage} alt="404 Not Found" />
+      </div>
     )
-}
-
-
-
-
-
+  }
 
 export default NotFound

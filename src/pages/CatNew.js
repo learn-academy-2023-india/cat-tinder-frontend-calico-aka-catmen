@@ -8,8 +8,4 @@ const CatNew = () => {
     )
 }
 
-
-
-
-
 export default CatNew

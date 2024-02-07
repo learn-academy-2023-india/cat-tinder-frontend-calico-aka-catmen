@@ -8,9 +8,4 @@ const CatIndex = () => {
     )
 }
 
-
-
-
-
-
 export default CatIndex
