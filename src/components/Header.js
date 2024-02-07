@@ -1,23 +1,33 @@
 import React from 'react'
+import { Nav, NavItem } from "reactstrap"
+import { NavLink } from "react-router-dom"
 import logo from '../assets/logo.png'
 
 const Header = () => {
   return (
-    <header className="header">
-      <div className="header-logo">
-        <a href="/"><img src={logo} alt="Cat Logo" /></a> 
-      </div>
-      <nav className="navigation">
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/cats">Browse Cats</a></li>
-          <li><a href="/cats">Add A Cat</a></li>
-          <li><a href="/contact">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <Nav className="header-nav">
+      <NavItem>
+        <Nav className="header-logo">
+        <NavLink to="/">
+          <img 
+          src={logo} 
+          alt="Cat Tinder logo with outline of cat" 
+          />
+        </NavLink>
+        </Nav>
+        
+          <NavItem>
+            <NavLink to="/" className="nav-link"> Home </NavLink>
+            <NavLink to="/about" className="nav-link">About</NavLink>
+            <NavLink to="/cats" className="nav-link">Browse Cats</NavLink>
+            <NavLink to="/cats" className="nav-link">Add A Cat</NavLink>
+            <NavLink to="/contact" className="nav-link">Contact</NavLink>
+          </NavItem>
+        
+      </NavItem>
+    </Nav>
   )
 }
+
 
 export default Header

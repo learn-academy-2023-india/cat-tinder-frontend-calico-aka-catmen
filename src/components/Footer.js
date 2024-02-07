@@ -1,13 +1,17 @@
 import React from 'react'
+import { Nav } from "reactstrap"
+import { NavLink } from "react-router-dom"
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <Nav className="footer">
       <p>&copy; {new Date().getFullYear()} Cat Tinder. All rights reserved. Made with <span role="img" aria-label="heart">💜</span> by Calico</p>
-      <div className="footer-links"> 
-        <a href="/privacy">Privacy Policy</a> | <a href="/terms">Terms of Use</a>
-      </div>
-    </footer>
+      <Nav className="footer-links"> 
+        <NavLink to="/privacy" className="nav-link">Privacy Policy</NavLink> | 
+        <NavLink to="/terms" className="nav-link">Terms of Use
+        </NavLink>
+      </Nav>
+    </Nav>
   )
 }
 
