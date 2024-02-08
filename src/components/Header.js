@@ -1,33 +1,37 @@
 import React from 'react'
-import { Nav, NavItem } from "reactstrap"
-import { NavLink } from "react-router-dom"
+import { Nav, NavItem } from 'reactstrap'
+import { NavLink } from 'react-router-dom'
 import logo from '../assets/logo.png'
 
 const Header = () => {
   return (
-    <Nav className="header-nav">
-      <NavItem>
-        <Nav className="header-logo">
-        <NavLink to="/">
-          <img 
-          src={logo} 
-          alt="Cat Tinder logo with outline of cat" 
-          />
-        </NavLink>
-        </Nav>
-        
-          <NavItem>
-            <NavLink to="/" className="nav-link"> Home </NavLink>
-            <NavLink to="/about" className="nav-link">About</NavLink>
-            <NavLink to="/cats" className="nav-link">Browse Cats</NavLink>
-            <NavLink to="/cats" className="nav-link">Add A Cat</NavLink>
-            <NavLink to="/contact" className="nav-link">Contact</NavLink>
-          </NavItem>
-        
-      </NavItem>
-    </Nav>
+      <Nav className="header-nav">
+        <NavItem>
+          <NavLink to="/">
+            <img src={logo} alt="Cat Logo" className="header-logo" />
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink to="/">Home</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink to="/catindex" className="nav-link">Meet All the Cats</NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink to="/catnew" className="nav-link">Add Your Cat</NavLink>
+        </NavItem>
+        <NavItem>
+          <a
+            target="_blank"
+            href="https://www.aspca.org/adopt-pet/adoptable-cats-your-local-shelter"
+            className="nav-link"
+            rel="noopener noreferrer"
+          >
+            Adopt a Cat!
+          </a>
+        </NavItem>
+      </Nav>
   )
 }
-
 
 export default Header

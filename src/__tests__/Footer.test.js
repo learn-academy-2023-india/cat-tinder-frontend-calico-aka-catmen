@@ -25,5 +25,13 @@ describe("<Footer />", () => {
         name: /terms of use/i
       })
       expect(clickableLinkT).toBeInTheDocument()
+      const clickableLinkC = screen.getByRole('link', {
+        name: /contact/i
+      })
+      expect(clickableLinkC).toBeInTheDocument()
+      const clickableLinkA = screen.getByRole('link', {
+        name: /about/i
+      })
+      expect(clickableLinkA).toBeInTheDocument()
   })
 })
