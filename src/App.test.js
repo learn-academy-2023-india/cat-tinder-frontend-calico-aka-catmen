@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { render, screen, image } from '@testing-library/react';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
 import logo from './assets/logo.png'
@@ -17,7 +17,7 @@ describe("<App />", () => {
     // screen.logTestingPlaygroundURL()
     // Act
     const image = screen.getByRole('img', {
-      name: /cat tinder logo with outline of cat/i
+      name: /cat logo/i
     })
     // Assert
     expect(image).toHaveAttribute("src", logo)
