@@ -9,7 +9,6 @@ import CatNew from "./pages/CatNew"
 import CatEdit from "./pages/CatEdit"
 import NotFound from "./pages/NotFound"
 import "./App.css"
-
 import mockCats from "./mockCats"
 
 const App = () => {
@@ -26,7 +25,7 @@ const App = () => {
         <Route path="/" element={<Home />} />
         <Route path="/catindex" element={<CatIndex cats={cats} />} />
         <Route path="/catshow/:id" element={<CatShow cats={cats} />} />
-        <Route path="/catnew" element={<CatNew creatCat={createCat} />} />
+        <Route path="/catnew" element={<CatNew createCat={createCat} />} />
         <Route path="/catedit" element={<CatEdit />} />
         <Route path="*" element={<NotFound />} />
       </Routes>

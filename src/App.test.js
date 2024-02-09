@@ -12,14 +12,13 @@ describe("<App />", () => {
         <App />
       </BrowserRouter>
     )
-    // Debugging 
-    // screen.debug()
-    // screen.logTestingPlaygroundURL()
-    // Act
+    
+    
+    
     const image = screen.getByRole('img', {
       name: /cat logo/i
     })
-    // Assert
+    
     expect(image).toHaveAttribute("src", logo)
   })
 
@@ -29,8 +28,6 @@ describe("<App />", () => {
         <App />
       </BrowserRouter>
     )
-
-    screen.logTestingPlaygroundURL()
     const list = screen.getByRole('link', {
       name: /contact/i})
     expect(list).toBeInTheDocument()

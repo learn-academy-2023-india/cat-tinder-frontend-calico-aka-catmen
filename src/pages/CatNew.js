@@ -29,6 +29,7 @@ const CatNew = ({ createCat }) => {
           <Input
             type="text"
             name="name"
+            id="name"
             value={newCat.name}
             onChange={handleChange}
           />
@@ -38,6 +39,7 @@ const CatNew = ({ createCat }) => {
           <Input
             type="number"
             name="age"
+            id="age"
             value={newCat.age}
             onChange={handleChange}
           />
@@ -47,6 +49,7 @@ const CatNew = ({ createCat }) => {
           <Input
             type="text"
             name="enjoys"
+            id="enjoys"
             value={newCat.enjoys}
             onChange={handleChange}
           />
@@ -56,12 +59,13 @@ const CatNew = ({ createCat }) => {
           <Input
             type="text"
             name="image"
+            id="image"
             value={newCat.image}
             onChange={handleChange}
           />
         </FormGroup>
-        <Button className="button" type="submit" >Submit New Cat</Button>
-      </Form>
+        <Button className="button" name="submit" >Submit New Cat</Button>
+      </Form>screen.logTestingPlaygroundURL()
     </div>
   )
 }
