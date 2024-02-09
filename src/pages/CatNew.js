@@ -65,7 +65,7 @@ const CatNew = ({ createCat }) => {
           />
         </FormGroup>
         <Button className="button" name="submit" >Submit New Cat</Button>
-      </Form>screen.logTestingPlaygroundURL()
+      </Form>
     </div>
   )
 }

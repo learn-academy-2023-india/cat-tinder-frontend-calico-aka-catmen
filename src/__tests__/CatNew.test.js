@@ -7,7 +7,7 @@ describe("<CatNew />", () => {
     it("renders the form", () => {
         render(
             <BrowserRouter>
-                <CatNew createCat={() => {}} />
+                <CatNew />
             </BrowserRouter>
         )
         const nameInput = screen.getByRole("textbox", {
@@ -31,7 +31,7 @@ describe("<CatNew />", () => {
         expect(imageInput).toBeInTheDocument()
     })
 
-    it("navigates to CatIndex onSubmit/onClick", () => {
+    it("renders the button", () => {
         render(
             <BrowserRouter>
                 <CatNew createCat={() => {}} />
