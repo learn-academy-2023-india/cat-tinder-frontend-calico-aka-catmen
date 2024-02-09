@@ -1,6 +1,6 @@
-import { render, screen } from '@testing-library/react';
-import Header from '../components/Header';
-import { BrowserRouter } from 'react-router-dom';
+import { render, screen } from '@testing-library/react'
+import Header from '../components/Header'
+import { BrowserRouter } from 'react-router-dom'
 
 
 
