@@ -1,6 +1,6 @@
+import { BrowserRouter } from "react-router-dom"
 import { render, screen } from "@testing-library/react"
 import CatNew from "../pages/CatNew"
-import { BrowserRouter } from "react-router-dom"
 import React from "react"
 
 describe("<CatNew />", () => {

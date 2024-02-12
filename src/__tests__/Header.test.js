@@ -1,6 +1,6 @@
-import { render, screen } from '@testing-library/react'
-import Header from '../components/Header'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter } from "react-router-dom"
+import { render, screen } from "@testing-library/react"
+import Header from "../components/Header"
 
 
 
@@ -24,16 +24,16 @@ describe("<Header />", () => {
           <Header />
         </BrowserRouter>
       )
-      const clickableLinkH = screen.getByRole('link', {
+      const clickableLinkH = screen.getByRole("link", {
         name: /home/i
       })
       expect(clickableLinkH).toBeInTheDocument()
       
-      const clickableLinkB = screen.getByRole('link', {
+      const clickableLinkB = screen.getByRole("link", {
         name: /meet all the cats/i
       })
       expect(clickableLinkB).toBeInTheDocument()
-      const clickableLinkAdd = screen.getByRole('link', {
+      const clickableLinkAdd = screen.getByRole("link", {
         name: /add your cat/i
       })
       expect(clickableLinkAdd).toBeInTheDocument()
