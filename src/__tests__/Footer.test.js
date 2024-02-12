@@ -1,6 +1,6 @@
-import { render, screen } from '@testing-library/react'
-import Footer from '../components/Footer'
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter } from "react-router-dom"
+import { render, screen } from "@testing-library/react"
+import Footer from "../components/Footer"
 
 describe("<Footer />", () => {
   it("renders a footer", () => {
@@ -17,19 +17,19 @@ describe("<Footer />", () => {
     const footer = screen.getByText(
         /© 2024 cat tinder\. all rights reserved\. made with by calico/i)
     expect(footer).toBeInTheDocument()
-    const clickableLinkP = screen.getByRole('link', {
+    const clickableLinkP = screen.getByRole("link", {
         name: /privacy policy/i
       })
       expect(clickableLinkP).toBeInTheDocument()
-      const clickableLinkT = screen.getByRole('link', {
+      const clickableLinkT = screen.getByRole("link", {
         name: /terms of use/i
       })
       expect(clickableLinkT).toBeInTheDocument()
-      const clickableLinkC = screen.getByRole('link', {
+      const clickableLinkC = screen.getByRole("link", {
         name: /contact/i
       })
       expect(clickableLinkC).toBeInTheDocument()
-      const clickableLinkA = screen.getByRole('link', {
+      const clickableLinkA = screen.getByRole("link", {
         name: /about/i
       })
       expect(clickableLinkA).toBeInTheDocument()

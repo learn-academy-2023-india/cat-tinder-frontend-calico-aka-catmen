@@ -13,7 +13,7 @@ const CatIndex = ({ cats }) => {
             className="cat-image"
           />
           <CardBody>
-            <CardTitle tag="h5" class="card-title">{cat.name}</CardTitle>
+            <CardTitle tag="h5" className="card-title">{cat.name}</CardTitle>
             <CardSubtitle className="mb-2 text-muted card-subtitle" tag="h6">
               Age: {cat.age}
             </CardSubtitle>
