@@ -1,6 +1,22 @@
-# Getting Started with Create React App
+# Cat Tinder Web App
+
+Cat Tinder is a unique full-stack, decoupled application designed for showcasing our journey from aspiring developers to proficient full-stack professionals. It mirrors the functionality of a dating app but for cats, focusing on integrating React for the frontend and Ruby on Rails for the backend API.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Getting Started
+
+To get this app running locally:
+
+- Clone this repo
+- Use `yarn start` to start the frontend
+- Navigate to the backend directory, run `rails server` to start the API
+
+### Prerequisites
+
+- Yarn
+- Ruby on Rails
+- PostgreSQL
 
 ## Available Scripts
 
@@ -69,8 +85,26 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
+## Features and Technologies
 
+- **React.js**: for building dynamic user interfaces.
+- **Ruby on Rails**: for API development.
+- **PostgreSQL**: for data storage.
+- **Postman**: for testing and documenting API endpoints.
+- **Testing**: RSpec for Rails, Jest, and React Testing Library for React.
 
+## Project Goals
 
-// screen.debug()
-// screen.logTestingPlaygroundURL()
+Our objective with Cat Tinder was to demonstrate our ability to:
+
+- Build a full-stack application
+- Apply CRUD functionalities
+- Design a responsive and user-friendly interface
+
+## Contact Us
+
+Interested in our project or looking for developers passionate about full-stack development? [Contact us](/contact) for inquiries or more information.
+
+## Acknowledgements
+
+Thanks to everyone who supported us through this project, providing feedback, guidance, and encouragement.
