@@ -1,4 +1,5 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
+import { Routes, Route, useNavigate } from "react-router-dom"
 import CatIndex from "./pages/CatIndex"
 import CatShow from "./pages/CatShow"
 import CatNew from "./pages/CatNew"
@@ -6,25 +7,66 @@ import CatEdit from "./pages/CatEdit"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
 import Home from "./pages/Home"
-import mockCats from "./mockCats.js"
 import NotFound from "./pages/NotFound"
-import { Routes, Route } from "react-router-dom"
 import "./App.css"
 
 const App = () => {
-  const [cats] = useState(mockCats)
+  const [cats, setCats] = useState([])
+  let navigate = useNavigate()
+
+  useEffect(() => {
+    readCats()
+  }, [])
+
+  const readCats = () => {
+    fetch("http://localhost:3000/cats")
+      .then((response) => response.json())
+      .then((payload) => setCats(payload))
+      .catch((errors) => console.log("Cat read errors:", errors))
+  }
 
   const createCat = (newCat) => {
-    console.log(newCat)
+    fetch("http://localhost:3000/cats", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newCat),
+    })
+      .then((response) => response.json())
+      .then(() => readCats())
+      .catch((errors) => console.log("Cat create errors:", errors))
   }
 
   const updateCat = (cat, id) => {
-    console.log(cat)
-    console.log(id)
+    fetch(`http://localhost:3000/cats/${id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(cat),
+    })
+      .then((response) => response.json())
+      .then(() => {
+        readCats()
+        navigate(`/catshow/${id}`)
+      })
+      .catch((errors) => console.log("Cat update errors:", errors))
   }
 
   const deleteCat = (id) => {
-    console.log(id)
+    fetch(`http://localhost:3000/cats/${id}`, {
+      method: "DELETE",
+      headers: {
+        "Content-Type": "application/json",
+      }
+    })
+      .then((response) => response.json())
+      .then(() => {
+        readCats()
+        navigate("/catindex")
+      })
+      .catch((errors) => console.log("Cat delete errors:", errors))
   }
 
   return (
