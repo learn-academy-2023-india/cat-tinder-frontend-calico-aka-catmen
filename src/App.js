@@ -1,13 +1,17 @@
 import React, { useState, useEffect } from "react"
 import { Routes, Route, useNavigate } from "react-router-dom"
+import About from "./pages/About"
 import CatIndex from "./pages/CatIndex"
 import CatShow from "./pages/CatShow"
 import CatNew from "./pages/CatNew"
 import CatEdit from "./pages/CatEdit"
+import Contact from "./pages/Contact"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
 import Home from "./pages/Home"
 import NotFound from "./pages/NotFound"
+import Privacy from "./pages/Privacy"
+import Terms from "./pages/Terms"
 import "./App.css"
 
 const App = () => {
@@ -84,6 +88,10 @@ const App = () => {
           path="/catshow/:id"
           element={<CatShow cats={cats} deleteCat={deleteCat} />}
         />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/terms" element={<Terms />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
