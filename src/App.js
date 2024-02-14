@@ -23,14 +23,14 @@ const App = () => {
   }, [])
 
   const readCats = () => {
-    fetch("http://localhost:3000/cats")
+    fetch("https://cat-tinder-7gqo.onrender.com/cats")
       .then((response) => response.json())
       .then((payload) => setCats(payload))
       .catch((errors) => console.log("Cat read errors:", errors))
   }
 
   const createCat = (newCat) => {
-    fetch("http://localhost:3000/cats", {
+    fetch("https://cat-tinder-7gqo.onrender.com/cats", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -43,7 +43,7 @@ const App = () => {
   }
 
   const updateCat = (cat, id) => {
-    fetch(`http://localhost:3000/cats/${id}`, {
+    fetch(`https://cat-tinder-7gqo.onrender.com/cats/${id}`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",
@@ -59,7 +59,7 @@ const App = () => {
   }
 
   const deleteCat = (id) => {
-    fetch(`http://localhost:3000/cats/${id}`, {
+    fetch(`https://cat-tinder-7gqo.onrender.com/cats/${id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
