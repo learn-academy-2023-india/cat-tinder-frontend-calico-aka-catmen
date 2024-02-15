@@ -107,16 +107,16 @@ Below are screenshots from various pages of our app, each accompanied by a brief
 
 | Page | Screenshot | Description |
 |------|------------|-------------|
-| **Home Page** | ![Home Page](/images/home.png) | The welcoming front of our app, designed to immediately engage users with its sleek interface and intuitive navigation. |
-| **About Page** | ![About Page](/images/about.png) | Delves into the story behind our application, showcasing the journey, technology stack, and the team’s collaborative effort. |
-| **Contact Page** | ![Contact Page](/images/contact.png) | Facilitates seamless communication with our team, equipped with a user-friendly form for inquiries and feedback. |
-| **Privacy Page** | ![Privacy Page](/images/privacy.png) | Reinforces our commitment to user privacy with clear, concise information on data handling practices. |
-| **Terms Page** | ![Terms Page](/images/terms.png) | Defines the guidelines for using our app, ensuring users are informed about their rights and responsibilities. |
-| **Cat Index Page** | ![Cat Index Page](/images/meet.png) | A vibrant display of our cat profiles, featuring a responsive layout for browsing and interaction. |
-| **Cat Show Page** | ![Cat Show Page](/images/show.png) | Highlights individual cat profiles with detailed descriptions, encouraging user engagement and interaction. |
-| **Cat New Page** | ![Cat New Page](/images/add.png) | Empowers users to contribute to our community by adding new cat profiles through an intuitive form interface. |
-| **Cat Edit Page** | ![Cat Edit Page](/images/edit.png) | Allows for easy updates and modifications to cat profiles, showcasing the app’s dynamic content management capabilities. |
-| **404 Page** | ![404 Page](/images/404.png) | Elegantly handles navigation to non-existent routes with a custom 404 page, guiding users back to the main content. |
+| **Home Page** | ![Home Page](public/images/home.png) | The welcoming front of our app, designed to immediately engage users with its sleek interface and intuitive navigation. |
+| **About Page** | ![About Page](public/images/about.png) | Delves into the story behind our application, showcasing the journey, technology stack, and the team’s collaborative effort. |
+| **Contact Page** | ![Contact Page](public/images/contact.png) | Facilitates seamless communication with our team, equipped with a user-friendly form for inquiries and feedback. |
+| **Privacy Page** | ![Privacy Page](public/images/privacy.png) | Reinforces our commitment to user privacy with clear, concise information on data handling practices. |
+| **Terms Page** | ![Terms Page](public/images/terms.png) | Defines the guidelines for using our app, ensuring users are informed about their rights and responsibilities. |
+| **Cat Index Page** | ![Cat Index Page](public/images/meet.png) | A vibrant display of our cat profiles, featuring a responsive layout for browsing and interaction. |
+| **Cat Show Page** | ![Cat Show Page](public/images/show.png) | Highlights individual cat profiles with detailed descriptions, encouraging user engagement and interaction. |
+| **Cat New Page** | ![Cat New Page](public/images/add.png) | Empowers users to contribute to our community by adding new cat profiles through an intuitive form interface. |
+| **Cat Edit Page** | ![Cat Edit Page](public/images/edit.png) | Allows for easy updates and modifications to cat profiles, showcasing the app’s dynamic content management capabilities. |
+| **404 Page** | ![404 Page](public/images/404.png) | Elegantly handles navigation to non-existent routes with a custom 404 page, guiding users back to the main content. |
 
 Each page has been crafted with attention to detail, ensuring a seamless and engaging user experience throughout our application.
 
