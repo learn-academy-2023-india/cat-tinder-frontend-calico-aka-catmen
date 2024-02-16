@@ -416,6 +416,10 @@ a {
   .header-nav {
 		padding: 0.5rem 1rem;
 	}
+	.form-container {
+		width: 100%;
+		max-width: none;
+	}
 	.form-container,
   .cat-details,
   .cat-show-container {

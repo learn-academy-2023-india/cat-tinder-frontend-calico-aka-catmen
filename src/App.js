@@ -11,6 +11,7 @@ import Header from "./components/Header"
 import Home from "./pages/Home"
 import NotFound from "./pages/NotFound"
 import Privacy from "./pages/Privacy"
+import ScrollToTop from "./components/ScrollToTop"
 import Terms from "./pages/Terms"
 import "./App.css"
 
@@ -77,6 +78,7 @@ const App = () => {
     <>
       <Header />
       <div className="main-container">
+      <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/catindex" element={<CatIndex cats={cats} />} />
