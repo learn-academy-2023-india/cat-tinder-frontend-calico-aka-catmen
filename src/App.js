@@ -76,6 +76,7 @@ const App = () => {
   return (
     <>
       <Header />
+      <div className="main-container">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/catindex" element={<CatIndex cats={cats} />} />
@@ -94,6 +95,7 @@ const App = () => {
         <Route path="/terms" element={<Terms />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
+      </div>
       <Footer />
     </>
   )
