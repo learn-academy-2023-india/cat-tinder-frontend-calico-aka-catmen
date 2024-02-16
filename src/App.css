@@ -378,11 +378,9 @@ a {
 .home-container {
 	align-items: center;
 	display: flex;
-	height: calc(100vh - 120px);
 	justify-content: center;
 	margin: auto;
 	overflow-y: auto;
-	padding-bottom: 5rem;
 }
 .home-image {
 	max-height: 60vh;
