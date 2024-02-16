@@ -7,7 +7,7 @@ const Privacy = () => {
             <h1>Privacy Policy</h1>
             <p>Last updated: February 13, 2024</p>
             
-            <p>Welcome to Cat Tinder, a portfolio project accessible from our Cat Tinder's Website, accessible from https://cat-tinder-frontend-9lwp.onrender.com/. This project is designed to showcase our full-stack development capabilities, focusing on React and Ruby on Rails. The privacy of our visitors and potential employers is a priority for us. This Privacy Policy outlines the types of information collected by Cat Tinder and its use.</p>
+            <p>Welcome to Cat Tinder, a portfolio project accessible from our Cat Tinder's Website, accessible from <a href="https://cat-tinder-frontend-9lwp.onrender.com/" target="_blank" rel="noopener noreferrer">https://cat-tinder-frontend-9lwp.onrender.com/</a>. This project is designed to showcase our full-stack development capabilities, focusing on React and Ruby on Rails. The privacy of our visitors and potential employers is a priority for us. This Privacy Policy outlines the types of information collected by Cat Tinder and its use.</p>
 
             <h2>Scope of This Privacy Policy</h2>
             <p>This Privacy Policy applies only to the Cat Tinder application, part of our portfolio. It aims to demonstrate our skills in software development and is not intended for commercial use. The information you provide is used solely within the context of this project.</p>
