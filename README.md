@@ -109,7 +109,7 @@ Below are screenshots from various pages of our app, each accompanied by a brief
 |------|------------|-------------|
 | **Home Page** | ![Home Page](public/images/home.png) | The welcoming front of our app, designed to immediately engage users with its sleek interface and intuitive navigation. |
 | **About Page** | ![About Page](public/images/about.png) | Delves into the story behind our application, showcasing the journey, technology stack, and the team’s collaborative effort. |
-| **Contact Page** | ![Contact Page](public/images/contact.png) | Facilitates seamless communication with our team, equipped with a user-friendly form for inquiries and feedback. |
+| **Contact Page** | ![Contact Page](public/images/contact.png) | Facilitates seamless communication with our team, equipped with user-friendly contact links for inquiries and feedback. |
 | **Privacy Page** | ![Privacy Page](public/images/privacy.png) | Reinforces our commitment to user privacy with clear, concise information on data handling practices. |
 | **Terms Page** | ![Terms Page](public/images/terms.png) | Defines the guidelines for using our app, ensuring users are informed about their rights and responsibilities. |
 | **Cat Index Page** | ![Cat Index Page](public/images/meet.png) | A vibrant display of our cat profiles, featuring a responsive layout for browsing and interaction. |
